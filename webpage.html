@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="webpage.css" />
+</head>
+
+<body>
+    <div class="navbar" id="sticky">
+        <nav>
+            <img class="logo" src="deloitte.svg" alt="small deloitte logo in top left corner">
+            <ul></ul>
+            <p>Who are we</p>
+            <p>What we do</p>
+            <p>Our thinking</p>
+            <p>Careers</p>
+            <!-- should make these bits seperate-->
+            <img class="search" src="https://via.placeholder.com/50x50">
+            <img class="globe" src="https://via.placeholder.com/50x50">
+            <p class="global">GLOBAL-EN</p>
+        </nav>
+    </div>
+    <div class="filler"></div>
+    <header>
+        <div class="topHeader">
+            <h1>Request for proposal for services</h1>
+            <h2>How can we help your business?</h2>
+        </div>
+    </header>
+
+    <div class="container1">
+        <h3>Thank you for your interest in Deloitte's services</h3>
+        <p>Please take a few moments to complete this form. Documents can be uploaded if needed to clarify your request.
+            This mailbox only accepts qualified proposal requests for Deloitte’s services. All other inquiries should be
+            directed to our <a href="">Contact Us</a> page.</p>
+        <p>Fields marked with an asterisk (*) are required.</p>
+        <div class="dropDown">
+            <form>
+                <select name="title" id="title" required>
+                    <!-- on click make the option text move to the border theres a thing for it cant remember-->
+                    <option value="" disabled selected hidden>Title*</option>
+                    <option value="dr">Dr.</option>
+                    <option value="miss">Miss</option>
+                    <option value="mr">Mr.</option>
+                    <option value="mrs">Mrs.</option>
+                    <option value="ms">Ms.</option>
+                    <option value="prof">Prof.</option>
+                </select>
+                <!-- first name is input-->
+                <input type="text" id="first" name="first" placeholder="First name*" required>
+                <input type="text" id="last" name="last" placeholder="Last name*" required>
+                <input type="text" id="position" name="position" placeholder="Position/Job title">
+                <input type="text" id="email" name="email" placeholder="Email address*" required>
+                <input type="text" id="comment" name="comment" placeholder="Comments and/or instructions*" required>
+                <input type="checkbox" id="check" name="check" required>
+                <p class="terms"> I have read and accept the Terms of Use. Please read our privacy statement to
+                    understand how we plan to use your personal information.</p>
+                <!-- maybe make span a div -->
+            <button type="submit" form="form1" value="Submit" class="sub" href="">Submit</button>
+            <!-- make an error message when not all filled in required -->
+        </form>
+            <br>
+            
+            <div class="container2">
+                <label class="heading">Not sure what you are looking for?</label>
+                <br>
+                <button class="button1">
+                    <p class="headingbutton">Careers</p>
+                    <p>Resumes/jobs inquiries should be sent through our careers site.</p>
+                </button>
+                <div class="circle1"></div>
+                <button class="button2">
+                    <p class="headingbutton">General inquiries</p>
+                    <p class="words">All other inquiries should be directed to our contact us page.</p>
+                </button>
+
+                <div class="circle2"></div>
+            </div>
+            <!-- <select required>
+    <option value="" disabled selected hidden>Please Choose...</option>
+    <option value="0">Open when powered (most valves do this)</option>
+    <option value="1">Closed when powered, auto-opens when power is cut</option>
+</select> 
+-->
+</body>
+<footer>
+
+    <p id="connect">Let's connect</p>
+
+    <ul id="medium">
+        <li>Get in touch</li>
+        <li>Explore careers</li>
+        <li>View locations</li>
+        <li>Learn about Deloitte</li>
+    </ul>
+
+    <ul id="small">
+        <li>Who we are</li>
+        <li>What we do</li>
+        <li>Our thinking</li>
+        <li>Submit RFP</li>
+        <li>Newsroom</li>
+        <li>Events</li>
+        <li>Press releases</li>
+    </ul>
+
+    <p class="follow">Follow us</p>
+    <img src="https://via.placeholder.com/50x50">
+    <img src="https://via.placeholder.com/50x50">
+    <img src="https://via.placeholder.com/50x50">
+    <img src="https://via.placeholder.com/50x50">
+
+
+</footer>
