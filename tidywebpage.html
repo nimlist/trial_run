@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="webpage.css" />
+</head>
+<body>
+<script src="java.js"></script>
+<!-- navigation bar-->    
+    <nav>
+        <div class="left--nav">
+        <img class="logo" src="deloitte.svg" alt="small deloitte logo in top left corner">
+        <ul><li>Who are we</li></ul>
+        <ul><li>What we do</li></ul>
+        <ul><li>Our thinking</li></ul>
+        <ul><li>Careers</li></ul>
+        </div>
+        <div class="right--nav">
+            <img class="search" src="https://via.placeholder.com/50x50">
+            <img class="globe" src="https://via.placeholder.com/50x50">
+            <ul><li>GLOBAL-EN</li></ul>
+        </div>
+    </nav>
+    <div class="grid--work">
+        <div class="container1">
+            <h3>Thank you for your interest in Deloitte's services</h3>
+            <p>Please take a few moments to complete this form. Documents can be uploaded if needed to clarify your request.
+            This mailbox only accepts qualified proposal requests for Deloitte’s services. All other inquiries should be
+            directed to our <a href="">Contact Us</a> page.</p>
+        <p>Fields marked with an asterisk (*) are required.</p>
+        <div>
+            <form id="formy">
+                <select id="drop--btn" required>Title</select>
+
+<!-- Javascript drop down-->
+                <script type="text/javascript">
+                    function populateDropDown(){
+                        var titles = [
+                            {titlesId: 1, title: "Dr."},
+                            {titlesId: 2, title: "Miss."},
+                            {titlesId: 3, title: "Mr."},
+                            {titlesId: 4, title: "Mrs."},
+                            {titlesId: 5, title: "Ms."},
+                            {titlesId: 6, title: "Prof."}
+                        ];
+                        var dropbtn = document.getElementById("dropbtn");
+                        for (var i = 0; i < titles.length; i++) {
+                var option = document.createElement("OPTION");
+                option.innerHTML = titles[i].title;
+                dropbtn.options.add(option);
+                    }}
+                </script>
+
+                <input type="text" id="first" name="first" placeholder="First name*" required>
+                <input type="text" id="last" name="last" placeholder="Last name*" required>
+                <input type="text" id="position" name="position" placeholder="Position/Job title">
+                <input type="text" id="email" name="email" placeholder="Email address*" required>
+                <input type="text" id="comment" name="comment" placeholder="Comments and/or instructions*" required>
+                <input type="checkbox" id="check" name="check" required>
+                <span class="terms"> I have read and accept the Terms of Use. Please read our privacy statement to
+                    understand how we plan to use your personal information.</span>
+                <button type="submit" value="Submit" form="formy" class="sub" href="#">Submit</button>
+            </form>
+        </div>
+        <div class="container2">
+            <label class="heading">Not sure what you are looking for?</label>
+            <a>
+                <p id="heading--a">Careers</p>
+                <p id="words--a">Resumes/jobs inquiries should be sent through our careers site.</p>
+            </a>
+            <a>
+                <p id="heading--a">General inquiries</p>
+                <p id="words--a">All other inquiries should be directed to our contact us page.</p>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
