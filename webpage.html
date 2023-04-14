@@ -4,9 +4,8 @@
     <link rel="stylesheet" type="text/css" href="webpage.css" />
 </head>
   
-
-
 <body>
+    <script src="java.js"></script>
     <div class="navbar" id="sticky">
         <nav>
             <img class="logo" src="deloitte.svg" alt="small deloitte logo in top left corner">
@@ -37,16 +36,27 @@
         <p>Fields marked with an asterisk (*) are required.</p>
         <div class="dropDown">
             <form>
-                <select name="title" id="title" required>
-                    <!-- on click make the option text move to the border theres a thing for it cant remember-->
-                    <option value="" disabled selected hidden>Title*</option>
+                <select onchange="get.Title(this.value)">
+                <option value="">Title</option>
+                <option value="Title">Title</option>
+                </select>
+                <select ></select>
+                </form>
+
+               <!--< <select id="title"> </select>
+                select name="title" id="title" required>
+                     on click make the option text move to the border theres a thing for it cant remember
+                   
+                   
+                   
+                     <option value="" disabled selected hidden>Title*</option>
                     <option value="dr">Dr.</option>
                     <option value="miss">Miss</option>
                     <option value="mr">Mr.</option>
                     <option value="mrs">Mrs.</option>
                     <option value="ms">Ms.</option>
                     <option value="prof">Prof.</option>
-                </select>
+                </select>-->
                 <!-- first name is input-->
                 <input type="text" id="first" name="first" placeholder="First name*" required>
                 <input type="text" id="last" name="last" placeholder="Last name*" required>
@@ -83,7 +93,7 @@
     <option value="1">Closed when powered, auto-opens when power is cut</option>
 </select> 
 -->
-</body>
+
 <footer>
 
     <p id="connect">Let's connect</p>
@@ -113,3 +123,4 @@
 
 
 </footer>
+</body>

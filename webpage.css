@@ -101,7 +101,6 @@ li.navbar{
 
 .globe{
     position: relative;
-    left: 150px;
 }
 
 .hello{
@@ -207,13 +206,9 @@ option{
 footer{
     background-color: #000;
     color: white;
-    padding: 96px;
+    
     grid-template-columns: 4fr;
 
-}
-
-footer.nth-of-type(#medium){
-    grid-column:1/2;
 }
 
 #connect{
@@ -225,11 +220,9 @@ footer.nth-of-type(#medium){
     font-size: 24px;
     line-height: 36px;
     position: relative;
-    left: -40px;
+    
 }
 
 #small{
     position: relative;
-    left: 300px;
-    top: -165px;
 }
