@@ -1,0 +1,170 @@
+/* 
+block
+Element
+Modifier
+*/
+
+*{
+    font-family: Open Sans,Calibri,Helvetica,sans-serif;
+}
+
+
+/*fix the height/ position of the nav*/
+nav{
+    background-color:black;
+    color: #d0d0ce;
+    height: 54px;
+    position: fixed;
+    top:0px;
+    width: 100%;
+}
+
+nav li{
+    list-style: none;
+    display: flex;;
+}
+
+.left--nav{
+    display: flex;
+    align-items: start;
+}
+
+.right--nav{
+    display: flex;
+    justify-content: end;
+    position: relative;
+    top: -53px;
+}
+
+.banner{
+    background-color: #f5f6f6;
+    height: 205.5px;
+    padding: 24px;
+    margin-top:48px;
+}
+
+h2{
+    font-size: 32px;
+    font-weight:300;
+}
+
+h3{
+   font-size: 18px;
+   font-weight: 600; 
+}
+
+/*.grid--work{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.container:nth-of-type(1){
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+
+.container:nth-of-type(3){
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+*/
+span{
+    font-size: 16px;
+    font-weight: 400px;
+    line-height: 28px;
+}
+
+p{
+    line-height: 28px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    gap: 32px;
+}
+input{
+    width: 738px;
+    height: 50px;
+    color: black;
+}
+ select{
+    width: 746px;
+    height: 53px;
+
+ }
+
+ #check{
+    height: 16px;
+    width: 16px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #1076a8;
+    flex-wrap: wrap;
+ }
+
+ button{
+    width: 122.102px;
+    height: 42.5256px;
+    border-style: solid;
+    background-color: #1076a8;
+    color: white;
+    font-size: 14px;
+    border-color: #1076a8;
+    border-radius: 87.5px;
+ }
+
+ .anchor{
+    background-color: #f5f6f6;
+    border-style: solid;
+    border-color: #f5f6f6;
+    border-width: 1px;
+    border-radius: 16px;
+    color: black;
+    height: 166px;
+    width: 368px;
+    text-align: left;
+    padding-left: 100px;
+    padding-right: 100px;
+ }
+
+ #heading--a{
+    font-size: 16px;
+    font-style: bold;
+ }
+
+ #heading--words{
+    font-size: 16px;
+ }
+
+ .space{
+    height: 16px;
+    width: 300px;
+ }
+
+ .circle1{
+        height: 24px;
+        width: 24px;
+        background-color: #1076a8;
+        border-style: solid;
+        border-color:#1076a8;
+        border-radius: 50%;
+        display: flex;
+        float: left;
+        padding: 12px;
+    }
+
+.circle2{
+    height: 24px;
+        width: 24px;
+        background-color: #1076a8;
+        border-style: solid;
+        border-color:#1076a8;
+        border-radius: 50%;
+        display: flex;
+        float: left;
+        padding: 12px;
+}
